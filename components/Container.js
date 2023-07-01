@@ -11,7 +11,7 @@ export default function Container(props) {
                 <title>{title}</title>
                 <meta name="description" content="Self-hosted anonymous inbox" />
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="shortcut icon" href="https://evan.beee.top/favicon/evan-v2/favicon.ico" />
             </Head>
             <Script strategy="lazyOnload" id="umami-js" src="https://dashboard.tanknee.cn/umami.js" data-website-id="ccaee418-93c4-44fb-90b6-f5c18bc0e3b7" />
 
