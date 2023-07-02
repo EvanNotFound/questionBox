@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     if (questionCount >= settings.get("ipInterceptCount")) {
         res.status(403).json({
             code: 1,
-            msg: "提问已达上限",
+            msg: "Questions asked too frequently",
         });
         return;
     }
@@ -42,6 +42,6 @@ export default async function handler(req, res) {
     }
     res.status(200).json({
         code: 0,
-        msg: "提问成功",
+        msg: "Successfully submitted",
     });
 }

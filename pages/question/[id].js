@@ -69,7 +69,7 @@ export default function QuestionCard(props) {
                 token,
             },
         });
-        setSnackbarHint("提交成功");
+        setSnackbarHint("Successfully submitted");
         setSnackbarOpen(true);
         router.back();
     };
@@ -80,7 +80,7 @@ export default function QuestionCard(props) {
                 token,
             },
         });
-        setSnackbarHint("删除成功");
+        setSnackbarHint("Successfully deleted");
         setSnackbarOpen(true);
         router.back();
     };
@@ -90,7 +90,7 @@ export default function QuestionCard(props) {
     };
 
     return (
-        <Container title="问题详情">
+        <Container title="Question Details">
             {!question ? (
                 <CircularProgress />
             ) : (
@@ -137,12 +137,12 @@ export default function QuestionCard(props) {
                                     {logged && (
                                         <>
                                             <Button size="small" onClick={handleDeleteQuestion}>
-                                                删除问题
+                                                Delete Question
                                             </Button>
                                         </>
                                     )}
                                     <Button style={{ marginLeft: "auto" }} size="small" onClick={handleSaveAnswer}>
-                                        回答
+                                        Answer
                                     </Button>
                                 </CardActions>
                             </>

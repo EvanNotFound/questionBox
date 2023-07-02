@@ -69,16 +69,21 @@ export default function Home(props) {
                 {settings?.inboxName}
             </h1>
 
-            <Alert className={styles.description} severity="info">
-                <strong>{settings?.description}</strong>
+            <Alert className={styles.description} icon={false} severity="info">
+                <strong>
+                Ask Anonymously, no info required. Can be anything. I will reply everything. 
+                </strong>
+                <br />
+                匿名提问，无需任何信息，所有问题尽管问，100% 回复。
+                
             </Alert>
             <div className={styles.buttonBar}>
                 <Button onClick={() => setOpen(true)} sx={{ maxWidth: 400, width: logged ? "50%" : "100%" }} variant="contained">
-                    提问
+                    Ask
                 </Button>
                 {logged && (
                     <Button onClick={() => router.push(`/settings?token=${token}`)} sx={{ maxWidth: 400, width: "50%" }} variant="contained">
-                        设置
+                        Settings
                     </Button>
                 )}
             </div>

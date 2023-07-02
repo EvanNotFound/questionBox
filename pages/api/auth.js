@@ -15,7 +15,7 @@ export default function handler(req, res) {
         });
     } else {
         res.status(401).json({
-            msg: "密码错误",
+            msg: "Wrong password",
             code: 1
         });
     }

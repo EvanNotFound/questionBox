@@ -38,10 +38,10 @@ export default function QuestionDialog(props) {
                     <Alert severity="warning">
                         <strong>
                             除了问题以外的任何信息都不会被记录。
-                            <br />
-                            提问请遵循当地的法律法规，切勿涉及政治、色情、暴力等非法内容。
+                            Anything other than the question will not be recorded.
                             <br />
                             只有被回答的问题才会出现在首页列表中。
+                            Only answered questions will appear in the list on the homepage.
                         </strong>
                     </Alert>
                     <TextField
@@ -55,13 +55,13 @@ export default function QuestionDialog(props) {
                         multiline
                         margin="dense"
                         id="content"
-                        label="问题内容"
+                        label="Question Content"
                         variant="filled"
                     />
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose}>取消</Button>
-                    <Button onClick={handleSubmit}>提交</Button>
+                    <Button onClick={handleClose}>Cancel</Button>
+                    <Button onClick={handleSubmit}>Submit</Button>
                 </DialogActions>
             </Dialog>
         </div>

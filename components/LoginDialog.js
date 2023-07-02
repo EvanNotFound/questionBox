@@ -24,11 +24,13 @@ export default function LoginDialog(props) {
     return (
         <>
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>身份验证</DialogTitle>
+                <DialogTitle>
+                    Identity Authentication
+                </DialogTitle>
                 <DialogContent>
                     <Alert severity="info">
                         <strong>
-                            请输入您在启动时设置的密钥（USER_KEY）
+                            Please enter the key you set when you start the server (USER_KEY)
                         </strong>
                     </Alert>
                     <TextField
@@ -39,14 +41,14 @@ export default function LoginDialog(props) {
                         }}
                         margin="dense"
                         id="content"
-                        label="密钥"
+                        label="Password"
                         variant="filled"
                         type="password"
                     />
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose}>取消</Button>
-                    <Button onClick={handleSubmit}>提交</Button>
+                    <Button onClick={handleClose}>Cancel</Button>
+                    <Button onClick={handleSubmit}>Submit</Button>
                 </DialogActions>
             </Dialog>
         </>
